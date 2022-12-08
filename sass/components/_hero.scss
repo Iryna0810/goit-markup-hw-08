@@ -8,7 +8,7 @@
     background-size: cover;
 
     &-title {
-        // width: 696px;
+        width: 100%;
         @include font (900,44px,1.3636);
         margin-bottom: 30px;
         margin-right: auto;
