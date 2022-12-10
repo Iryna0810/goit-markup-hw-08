@@ -3,8 +3,9 @@
 
     &-list {
         display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         gap: 30px;
     }
 
@@ -13,13 +14,19 @@
         justify-content: center;
         align-items: center;
         background-color: #f5f4fa;
-        width: 270px;
+        min-width: 270px;
         height: 120px;
         margin-bottom: 30px;
+       
     }
+    
+    &-list__icon {}
+    
+        
 
     &-list_title {
         margin-bottom: 10px;
+        text-align: center;
         font-weight: 700;
         text-transform: uppercase;
         color: var(--title-color);

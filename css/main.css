@@ -137,4 +137,31 @@ body {
 }
 .hero-btn:hover, .hero-btn:focus {
   background-color: #188ce8;
+}
+
+.properties {
+  background-color: #ffffff;
+}
+.properties-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.properties-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  min-width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.properties-list_title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--title-color);
 }/*# sourceMappingURL=main.css.map */
