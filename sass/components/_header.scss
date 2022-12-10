@@ -5,16 +5,22 @@
     &-container {
         display: flex;
         align-items: center;
-
+        
     }
 
     &-nav-container {
         display: flex;
         align-items: center;
+        @media screen and (min-width:768px) and (max-windth:1199px) {
+        justify-content: space-between;
+        }
     }
 }
 .logo {
+    @media screen and (min-width: 1200px) {
     margin-right: 93px;
+    }
+
 
     &-nav {
         font-family: 'Raleway';
@@ -30,12 +36,20 @@
 .studio {
     color: var(--brand-color);
 }
-
+// .header-nav {
+//     margin-left: auto;
+// }
 .nav-list {
     display: flex;
     align-items: center;
     gap: 50px;
 
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: 480px) {
+    margin-left: 90px;
+}
     &-item {
         position: relative;
         padding-top: 32px;
@@ -70,11 +84,29 @@
         border-radius: 2px;
     }
 }
+.header-adress {
+    margin-left: auto;
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+        margin-left: auto;
+    }
+}
 .adress {
     display: flex;
     align-items: center;
     margin-left: auto;
     gap: 50px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-left: 90px;
+        }
+        @media  screen and (max-width:767px) {
+         display: none;   
+        }
+        // @media screen and (min-width: 480px) {
+        // margin-left: ;
+        // }
 
     &-list {
         color: var(--brand-color);
@@ -89,7 +121,9 @@
         list-style: none;
         color: var(--link-color);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+// @media screen and () {
+    
+// }
         &:hover,
         &:focus {
             color: var(--brand-color);
@@ -100,4 +134,30 @@
 .phone {
     fill: currentColor;
     margin-right: 10px;
+}
+.header-modal {
+margin-left: auto;
+@media screen and (min-width: 768px) {
+display: none;
+}
+
+.start {
+display: flex;
+flex-wrap: wrap;
+padding: 12px 8px;
+gap: 4px;
+width: 40px;
+height: 40px;
+
+}
+.start__link {
+display: block;
+width: 24px;
+height: auto;
+background: #212121;
+ &:hover,
+ &:focus {
+    background-color: var(--brand-color);
+ }
+}
 }
