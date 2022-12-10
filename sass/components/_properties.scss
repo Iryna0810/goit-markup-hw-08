@@ -3,27 +3,42 @@
 
     &-list {
         display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // gap: 30px;
+        @media screen and (max-width:1199px) {
         flex-wrap: wrap;
+            }
+    }
+
+    
+    &-link {
+        display: block;
+        width: 100%;
+        height: auto;
         align-items: center;
-        justify-content: center;
-        gap: 30px;
+    @media screen and (min-width:768px) {  
+    flex-basis: 50%;}
+    @media screen and (min-width:1200px) {
+    align-items: flex-start;
+    flex-basis: 25%;
+        }
+    
     }
 
     &-list__item {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #f5f4fa;
+        margin-right: auto;
+        margin-left: auto;
         min-width: 270px;
         height: 120px;
+        background-color: #f5f4fa;
         margin-bottom: 30px;
-       
     }
-    
-    &-list__icon {}
-    
+      
         
-
     &-list_title {
         margin-bottom: 10px;
         text-align: center;

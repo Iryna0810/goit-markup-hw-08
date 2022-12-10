@@ -150,18 +150,38 @@ body {
 }
 .properties-list {
   display: flex;
-  flex-wrap: wrap;
+}
+@media screen and (max-width: 1199px) {
+  .properties-list {
+    flex-wrap: wrap;
+  }
+}
+.properties-link {
+  display: block;
+  width: 100%;
+  height: auto;
   align-items: center;
-  justify-content: center;
-  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .properties-link {
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .properties-link {
+    align-items: flex-start;
+    flex-basis: 25%;
+  }
 }
 .properties-list__item {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f4fa;
+  margin-right: auto;
+  margin-left: auto;
   min-width: 270px;
   height: 120px;
+  background-color: #f5f4fa;
   margin-bottom: 30px;
 }
 .properties-list_title {
