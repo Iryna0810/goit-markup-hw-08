@@ -2,29 +2,34 @@
     background-color: #ffffff;
 
     &__title {
-@include font (700,36px,1.1666)
+        @include font (700,36px,1.1666);
         text-align: center;
         color: var(--title-color);
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
     }
 
     &-list {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
         align-items: center;
         &__link {
                 padding: 16px 32px;
-                margin-right: 30px;
+                width: calc((100% - 30px) / 2);
+                @media screen and (min-width: 768px) {
+                width: calc((100% - 60px) / 3);
+                }
+                @media screen and (min-width: 1200px) {
                 width: calc((100% - 150px) / 6);
+                }
                 height: 92px;
                 background: #ffffff;
                 border: 1px solid #afb1b8;
                 border-radius: 4px;
                 transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
-                &:last-child {
-                    margin-right: 0;
-                }
         
                 &:hover,
                 &:focus {
