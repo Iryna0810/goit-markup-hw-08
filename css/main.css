@@ -73,6 +73,13 @@ body {
   list-style-type: none;
 }
 
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 .hide {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -389,7 +396,18 @@ body {
 
 .command {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .command {
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .command {
+    padding-right: -15px;
+    padding-left: -15px;
+  }
 }
 .command-section {
   background-color: #f5f4fa;
@@ -411,15 +429,26 @@ body {
   color: var(--title-color);
 }
 .command-list {
-  margin-right: 30px;
-  padding-bottom: 30px;
-  width: calc((100% - 90px) / 4);
+  padding-bottom: 24px;
+  display: block;
+  height: auto;
+  width: 100%;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.command-list:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .command-list {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .command-list {
+    width: calc((100% - 120px) / 4);
+    margin: 15px;
+    padding-bottom: 30px;
+  }
 }
 
 .position {
