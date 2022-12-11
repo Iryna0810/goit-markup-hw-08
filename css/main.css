@@ -99,15 +99,10 @@ body {
   display: flex;
   align-items: center;
 }
-@media screen and (min-width: 768px) and (max-windth: 1199px) {
-  .header-nav-container {
-    justify-content: space-between;
-  }
-}
 
 @media screen and (min-width: 1200px) {
   .logo {
-    margin-right: 93px;
+    margin-right: 90px;
   }
 }
 .logo-nav {
@@ -173,15 +168,6 @@ body {
   background-repeat: no-repeat;
   background-position: bottom;
   border-radius: 2px;
-}
-
-.header-adress {
-  margin-left: auto;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header-adress {
-    margin-left: auto;
-  }
 }
 
 .adress {
