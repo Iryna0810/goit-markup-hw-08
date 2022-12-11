@@ -397,17 +397,7 @@ img {
 .command {
   display: flex;
   flex-wrap: wrap;
-}
-@media screen and (max-width: 768px) {
-  .command {
-    gap: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .command {
-    padding-right: -15px;
-    padding-left: -15px;
-  }
+  gap: 30px;
 }
 .command-section {
   background-color: #f5f4fa;
@@ -439,14 +429,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .command-list {
-    width: calc((100% - 60px) / 2);
-    margin: 15px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .command-list {
-    width: calc((100% - 120px) / 4);
-    margin: 15px;
+    width: calc((100% - 90px) / 4);
     padding-bottom: 30px;
   }
 }
