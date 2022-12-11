@@ -1,6 +1,8 @@
 .gallery {
     padding-top: 0px;
-
+    @media screen and (max-width: 1199px) {
+    display: none;
+}
     &-list {
         display: flex;
         gap: 30px;
@@ -9,7 +11,7 @@
 
     &-title {
         margin-bottom: 50px;
-        @include font (700, 36px, 1.1666)
+        @include font (700, 36px, 1.1666);
         text-align: center;
         color: var(--title-color);
     }

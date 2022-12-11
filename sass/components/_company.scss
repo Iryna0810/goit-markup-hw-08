@@ -5,14 +5,14 @@
         background-color: #f5f4fa;
     }
     &-title {
-        @include font (700, 36px, 1.1666)
+        @include font (700, 36px, 1.1666);
         margin-bottom: 50px;
         text-align: center;
         color: var(--title-color);
     }
     &-title-name {
         margin-top: 30px;
-        @include font (500,16px,1.1875)
+        @include font (500,16px,1.1875);
         text-align: center;
         color: var(--title-color);
     }
@@ -31,9 +31,7 @@
 }
 .position {
     margin-top: 10px;
-    @include font (null, 16px, 1.1875)
-    // font-size: 16px;
-    // line-height: 19px;
+    @include font (null, 16px, 1.1875);
     text-align: center;
 }
 .designer-soc-list {
