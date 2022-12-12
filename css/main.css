@@ -73,6 +73,10 @@ body {
   list-style-type: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
 img {
   display: block;
   width: 100%;
@@ -219,20 +223,123 @@ img {
   margin-right: 10px;
 }
 
-.menu-close {
+.menu-open {
   display: block;
   margin-left: auto;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  border-color: transparent;
+  background-color: transparent;
 }
 @media screen and (min-width: 768px) {
-  .menu-close {
+  .menu-open {
     display: none;
-    width: 40px;
-    height: 40px;
   }
 }
 
-.header__item {
+.menu-open__item {
   background-color: transparent;
+}
+
+.mob-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  top: 0;
+}
+.mob-menu > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-modal {
+  display: block;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.menu-close__item {
+  background-color: transparent;
+}
+.menu-modal:hover .menu-close__item {
+  fill: var(--brand-color);
+}
+
+.menu-list {
+  margin-bottom: 32px;
+}
+
+.menu-list-item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc 1.175;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.adress-menu__tel {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc 1.1764705882;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.adress-menu__email {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc 1.1666666667;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.menu-soc-list {
+  display: flex;
+  align-items: center;
+}
+
+.menu-soc-list {
+  text-align: center;
+}
+
+.menu-soc-link {
+  position: relative;
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.menu-soc-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 1px;
+  height: 22px;
+}
+
+.menu-soc-item {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  fill: #212121;
 }
 
 .backdrop {
