@@ -249,6 +249,8 @@ img {
   height: 100vh;
   background-color: #ffffff;
   top: 0;
+  padding: 10px 15px 48px 40px;
+  z-index: 1;
 }
 .mob-menu > .container {
   height: 100%;
@@ -323,15 +325,6 @@ img {
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196F3;
-}
-
-.menu-soc-link::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  content: "";
-  width: 1px;
-  height: 22px;
 }
 
 .menu-soc-item {

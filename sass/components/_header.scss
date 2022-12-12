@@ -150,8 +150,8 @@ background-color: transparent;
     height: 100vh;
     background-color: #ffffff;
     top: 0;
-    // padding: 10px 15px 48px 40px;
-    // z-index: 1;
+    padding: 10px 15px 48px 40px;
+    z-index: 1;
     >.container {
         height: 100%;
         display: flex;
@@ -180,10 +180,6 @@ background-color: transparent;
     
 }
 
-.header-menu {}
-.menu {
-
-}
 
 .menu-list {
 margin-bottom: 32px;
@@ -197,12 +193,6 @@ font-weight: 500;
     color: #212121;
 }
 
-
-.adress-menu {}
-
-.adress-menu__list {
-
-}
 
 .adress-menu__tel {
     display: block;
@@ -242,15 +232,15 @@ text-align: center;
         letter-spacing: 0.02em;
         color: #2196F3;
 }
-.menu-soc-link::after {
-    position: absolute;
-    top:0;
-    right: 0;
-    content: '';
-    width: 1px;
-    height: 22px;
+// .menu-soc-link::after {
+//     position: absolute;
+//     top:0;
+//     right: 0;
+//     content: '';
+//     width: 1px;
+//     height: 22px;
 
-}
+// }
 .menu-soc-item {
 border: 1px solid rgba(33, 33, 33, 0.2);
 
