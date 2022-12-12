@@ -219,30 +219,20 @@ img {
   margin-right: 10px;
 }
 
-.header-modal {
+.menu-close {
+  display: block;
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
-  .header-modal {
+  .menu-close {
     display: none;
+    width: 40px;
+    height: 40px;
   }
 }
-.header-modal .start {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 12px 8px;
-  gap: 4px;
-  width: 40px;
-  height: 40px;
-}
-.header-modal .start__link {
-  display: block;
-  width: 24px;
-  height: auto;
-  background: #212121;
-}
-.header-modal .start__link:hover, .header-modal .start__link:focus {
-  background-color: var(--brand-color);
+
+.header__item {
+  background-color: transparent;
 }
 
 .backdrop {

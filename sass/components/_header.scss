@@ -125,29 +125,35 @@
     fill: currentColor;
     margin-right: 10px;
 }
-.header-modal {
+.menu-close {
+    display: block;
 margin-left: auto;
 @media screen and (min-width: 768px) {
 display: none;
-}
-
-.start {
-display: flex;
-flex-wrap: wrap;
-padding: 12px 8px;
-gap: 4px;
 width: 40px;
 height: 40px;
+}
+}
+.header__item {
+    background-color: transparent;
+}
+// .start {
+// display: flex;
+// flex-wrap: wrap;
+// padding: 12px 8px;
+// gap: 4px;
+// width: 40px;
+// height: 40px;
 
-}
-.start__link {
-display: block;
-width: 24px;
-height: auto;
-background: #212121;
- &:hover,
- &:focus {
-    background-color: var(--brand-color);
- }
-}
-}
+// }
+// .start__link {
+// display: block;
+// width: 24px;
+// height: auto;
+// background: #212121;
+//  &:hover,
+//  &:focus {
+//     background-color: var(--brand-color);
+//  }
+// }
+// }
