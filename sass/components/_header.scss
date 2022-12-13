@@ -191,12 +191,10 @@ margin-bottom: 32px;
 }
 
 .menu-list-item {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: (47 / 40);
+    @include font (500, 40px, 1.175);
     letter-spacing: 0.02em;
     color: #212121;
-}
+    }
 .list-current {
     color: var(--brand-color);
 }
@@ -207,18 +205,14 @@ margin-bottom: 32px;
 .adress-menu__tel {
     display: block;
     margin-bottom: 32px;
-    font-weight: 500;
-    font-size: 34px;
-    line-height: (40 / 34);
+    @include font (500, 34px, 1.1764);
     letter-spacing: 0.02em;
     color: #2196F3;
 }
 
 .adress-menu__email {
     display: block;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: calc (28 / 24);
+    @include font (500, 24px, 1.16);
     letter-spacing: 0.02em;
     color: #757575;
 }
@@ -231,9 +225,7 @@ align-items: center;
 .menu-soc-link {
     position: relative;
     margin-right: 10px;
-    font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
+    @include font (500, 18px, 1.22);
         letter-spacing: 0.02em;
         color: #2196F3;
 }
