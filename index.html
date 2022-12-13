@@ -54,72 +54,69 @@
         </ul>
 
   
-          <button type="button" class="menu-open">
+          <button type="button" class="menu-open" data-menu-open>
           <svg class="menu-open__item" width="40px" height="40px">
             <use href="./images/icons_.svg#icon-menu_40px" ></use>
           </svg>
           </button>
         </div>
-        <div class="mob-menu container">
-          <button type="button" class="menu-modal" >
-          <svg class="menu-close__item" width="40px" height="40px">
-            <use href="./images/icons_.svg#icon-close_40px_menu" ></use>
-          </svg>
-          </button>
-          <div class="header-menu">
-            <ul class="menu list">
-              <li class="menu-list list">
-                <a class="menu-list-item link " href="./index.html">Студія</a>
-              </li>
-              <li class="menu-list list">
-                <a class="menu-list-item link" 
-                href="./portfolio.html" target="_blank">
-                Портфоліо
-              </a>
-              </li>
-              <li class="menu-list list">
-                <a class="menu-list-item link" 
-                href="#">Контакти</a>
-              </li>
-            </ul>
+        <div class="mob-menu is-hidden" data-menu>
+
+          <div class="container">
+<div class="mob-menu-top">
+              <button type="button" class="menu-modal" data-menu-close >
+              <svg class="menu-close__item" width="40px" height="40px">
+                <use href="./images/icons_.svg#icon-close_40px_menu" ></use>
+              </svg>
+              </button>
+              <div class="header-menu">
+                <ul class="menu list">
+                  <li class="menu-list list">
+                    <a class="menu-list-item link list-current" href="./index.html">Студія</a>
+                  </li>
+                  <li class="menu-list list">
+                    <a class="menu-list-item link" 
+                    href="./portfolio.html" target="_blank">
+                    Портфоліо
+                  </a>
+                  </li>
+                  <li class="menu-list list">
+                    <a class="menu-list-item link" 
+                    href="#">Контакти</a>
+                  </li>
+                </ul>
+              </div>
+</div>
+<div class="mob-menu-bottom">
+                      <ul class="adress-menu list">
+                        <li class="adress-menu__list list">
+                          <a class="adress-menu__tel link" href="tel:+380961111111">
+                            +38 096 111 11 11</a>
+                        </li>
+                        <li class="adress-menu__list list">
+                          <a class="adress-menu__email link" href="mailto:info@devstudio.com">
+                            info@devstudio.com</a>
+                        </li>
+                      </ul>
+                      <ul class="menu-soc-list list">
+                        <li  class="mob-soc-item link">
+                          <a href="#" class="menu-soc-link item-soc link">Instagram
+                          </a>
+                        </li>
+                        <li class="mob-soc-item link">
+                          <a href="#" class="menu-soc-link item-soc link">Twitter
+                          </a>
+                        </li>
+                        <li class="mob-soc-item link">
+                          <a href="#" class="menu-soc-link item-soc link">Facebook
+                          </a>
+                        </li>
+                        <li class="mob-soc-item link">
+                          <a href="#" class="menu-soc-link link">LinkedIn</a>
+                        </li>
+                      </ul>
+</div>
           </div>
-                  <ul class="adress-menu list">
-                   
-                    <li class="adress-menu__list list">
-                      <a class="adress-menu__tel link" href="tel:+380961111111">
-                        +38 096 111 11 11</a>
-                    </li>
-                    <li class="adress-menu__list list">
-                      <a class="adress-menu__email link" href="mailto:info@devstudio.com">
-                        info@devstudio.com</a>
-                    </li>
-                  </ul>
-                  <ul class="menu-soc-list list">
-                    <li  class="link">
-                      <a href="#" class="menu-soc-link link">Instagram
-                        <svg class="menu-soc-item" width="1px" height="22px">
-                          <use href="./images/icons_.svg#icon-Line-1"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="link">
-                      <a href="#" class="menu-soc-link link">Twitter
-                        <svg class="menu-soc-item" width="1px" height="22px">
-                          <use href="./images/icons_.svg#icon-Line-1"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="link">
-                      <a href="#" class="menu-soc-link link">Facebook
-                        <svg class="menu-soc-item" width="1px" height="22px">
-                          <use href="./images/icons_.svg#icon-Line-1"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="link">
-                      <a href="#" class="menu-soc-link link">LinkedIn</a>
-                    </li>
-                  </ul>
         </div>
     </header>
     <main>
@@ -533,5 +530,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

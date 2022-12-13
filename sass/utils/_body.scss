@@ -38,6 +38,9 @@ body {
 .link {
     text-decoration: none;
 }
+.no-scroll {
+    overflow: hidden;
+}
 img {
     display: block;
     width: 100%;

@@ -150,23 +150,28 @@ background-color: transparent;
     height: 100vh;
     background-color: #ffffff;
     top: 0;
-    padding: 10px 15px 48px 40px;
+    padding-top: 10px;
+    padding-bottom: 48px;
     z-index: 1;
+    
     >.container {
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        overflow: auto;
     }
-
+@media screen and (min-width: 780px) {
+    display: none;
+}
 }
 
 .menu-modal {
     display: block;
+    text-align: center;
     margin-left: auto;
     width: 40px;
     height: 40px;
-   
     cursor: pointer;
     border-color: transparent;
     background-color: transparent;
@@ -186,27 +191,31 @@ margin-bottom: 32px;
 }
 
 .menu-list-item {
-font-weight: 500;
+    font-weight: 500;
     font-size: 40px;
-    line-height: calc (47 / 40);
+    line-height: (47 / 40);
     letter-spacing: 0.02em;
     color: #212121;
 }
+.list-current {
+    color: var(--brand-color);
+}
 
-
+.adress-menu {
+    margin-bottom: 64px;
+}
 .adress-menu__tel {
     display: block;
     margin-bottom: 32px;
     font-weight: 500;
-        font-size: 34px;
-        line-height: calc (40 / 34);
-        letter-spacing: 0.02em;
-        color: #2196F3;
+    font-size: 34px;
+    line-height: (40 / 34);
+    letter-spacing: 0.02em;
+    color: #2196F3;
 }
 
 .adress-menu__email {
     display: block;
-    margin-bottom: 32px;
     font-weight: 500;
     font-size: 24px;
     line-height: calc (28 / 24);
@@ -218,12 +227,8 @@ display: flex;
 align-items: center;
 
 }
-.menu-soc-list {
-text-align: center;
-}
+
 .menu-soc-link {
-    // // align-content: center;
-    // align-items: center;
     position: relative;
     margin-right: 10px;
     font-weight: 500;
@@ -232,20 +237,20 @@ text-align: center;
         letter-spacing: 0.02em;
         color: #2196F3;
 }
-// .menu-soc-link::after {
-//     position: absolute;
-//     top:0;
-//     right: 0;
-//     content: '';
-//     width: 1px;
-//     height: 22px;
-
-// }
 .menu-soc-item {
-border: 1px solid rgba(33, 33, 33, 0.2);
+    position: relative;
+    margin-right: 20px;
+}
+.item-soc {
+    margin-right: 20px;
+}
+.item-soc::after {
+    position: absolute;
+    top:0;
+    right: -10px;
+    content: '';
+    width: 1px;
+    height: 22px;
+    background-color: #212121;
 
-margin-right: 10px;
-margin-left: 10px;
-display: inline-block;
-fill:#212121;
 }
