@@ -112,6 +112,12 @@ img {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .header-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
 .header-nav-container {
   display: flex;
   align-items: center;
@@ -255,8 +261,9 @@ img {
   height: 100vh;
   background-color: #ffffff;
   top: 0;
-  padding-top: 10px;
+  padding-top: 48px;
   padding-bottom: 48px;
+  padding-left: 40px;
   z-index: 1;
 }
 .mob-menu > .container {
@@ -274,6 +281,9 @@ img {
 
 .menu-modal {
   display: block;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   text-align: center;
   margin-left: auto;
   width: 40px;
@@ -654,6 +664,8 @@ img {
 }
 @media screen and (min-width: 480px) {
   .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: var(--grad), url(../images/hero-bg-tab_1x.jpg);
   }
 }
@@ -664,12 +676,20 @@ img {
 }
 @media screen and (min-width: 780px) {
   .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: var(--grad), url(../images/hero-bg-desk_1x.jpg);
   }
 }
 @media screen and (min-width: 780px) and (min-device-pixel-ratio: 2), screen and (min-width: 780px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 780px) and (min-resolution: 192dpi), screen and (min-width: 780px) and (min-resolution: 2dppx) {
   .hero {
     background-image: var(--grad), url(../images/hero-bg-desk_2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 .hero-title {
@@ -1174,6 +1194,12 @@ img {
     display: block;
     text-align: center;
   }
+}
+.footer-tablet {
+  display: flex;
+  gap: 165px;
+  align-items: baseline;
+  justify-content: center;
 }
 @media screen and (max-width: 1199px) {
   .footer-adress-container {

@@ -19,6 +19,13 @@
         padding-bottom: 60px;
         
     }
+    &-tablet {
+        display: flex;
+        gap: 165px;
+        align-items: baseline;
+        justify-content: center;
+
+    }
 &-adress-container {
             @media screen and (max-width:1199px) {
             display: block;
