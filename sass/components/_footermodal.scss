@@ -1,32 +1,33 @@
 .modal-subscribe {
     
-    // width: 570px;
-    // min-height: 86px;
+    width: 570px;
+    min-height: 86px;
 
     @media screen and (max-width:1199px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    width: 450px;
     height: auto;
+    margin: 0 auto;
             }
         }
 
 
 .footer-subscribe {
-    @media screen and (max-width:1199px) {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    height: auto;
+    min-height: 50px;
+    @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
             }
+
     @media screen and (min-width:1200px) {
             display: flex;
             gap: 12px;
-            justify-content: flex-end;
             width: 570px;
-            min-height: 50px;
     }
     position: relative;
     align-items: center;
@@ -34,7 +35,7 @@
 }
 
 .footer-input {
-    width: 100%;
+    width: 450px;
     height: 50px;
     background: transparent;
     padding: 15px 16px;
@@ -44,7 +45,9 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+@include desktop {
+width: 100%;
+}
     &:focus {
         border: 1px solid var(--brand-color);
     }
