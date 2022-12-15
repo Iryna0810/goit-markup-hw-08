@@ -271,9 +271,7 @@ img {
   height: 100vh;
   background-color: #ffffff;
   top: 0;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
+  padding: 48px 40px;
   z-index: 1;
 }
 .mob-menu > .container {
@@ -385,7 +383,7 @@ img {
 
 .modal {
   position: absolute;
-  max-width: 450px;
+  width: 450px;
   height: 609px;
   top: 50%;
   left: 50%;
@@ -395,13 +393,21 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
-  overflow: scroll;
+}
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     min-height: 581px;
   }
+}
+
+.modal > body {
+  overflow: hidden;
 }
 
 .backdrop.is-hidden .modal {
@@ -653,6 +659,8 @@ img {
   width: 100%;
   height: auto;
   margin: 0 auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #2f303a;
   background-image: var(--grad), url(../images/hero-bg-mob_1x.jpg);
   background-repeat: no-repeat;
@@ -666,8 +674,6 @@ img {
 }
 @media screen and (min-width: 480px) {
   .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
     background-image: var(--grad), url(../images/hero-bg-tab_1x.jpg);
   }
 }
@@ -678,8 +684,6 @@ img {
 }
 @media screen and (min-width: 780px) {
   .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
     background-image: var(--grad), url(../images/hero-bg-desk_1x.jpg);
   }
 }
@@ -1086,14 +1090,22 @@ img {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 480px) {
+  .modal-subscribe {
+    width: 100%;
+  }
+}
 
 .footer-subscribe {
   display: flex;
   justify-content: center;
-  width: 100%;
-  min-height: 50px;
   position: relative;
   align-items: center;
+}
+@media screen and (max-width: 480) {
+  .footer-subscribe {
+    max-width: 450px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .footer-subscribe {
@@ -1109,7 +1121,8 @@ img {
 }
 
 .footer-input {
-  width: 450px;
+  display: block;
+  width: 100%;
   height: 50px;
   background: transparent;
   padding: 15px 16px;
@@ -1126,13 +1139,18 @@ img {
     width: 100%;
   }
 }
+@media screen and (max-width: 480px) {
+  .footer-input {
+    width: 100%;
+  }
+}
 .footer-input:focus {
   border: 1px solid var(--brand-color);
 }
 
 .footer-label {
   position: absolute;
-  top: 25%;
+  top: 25px;
   left: 16px;
   transform: translateY(-50%);
   font-size: 16px;

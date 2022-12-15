@@ -6,15 +6,11 @@
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// @media screen and (max-width:480px) {
-// margin: 0 auto;
-//     max-width: 100vh;
-// }
 }
 
 .modal {
     position: absolute;
-    max-width: 450px;
+    width: 450px;
     height: 609px;
     top: 50%;
     left: 50%;
@@ -25,15 +21,19 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px;
-    overflow: scroll;
-
+    // overflow: auto;
+@media screen and (max-width:480px) {
+  width: 100%;
+  }
     @media screen and (min-width:1200px) {
     width: 528px;
     min-height: 581px;
     }
 
 }
-
+.modal > body {
+     overflow: hidden;
+ }
 
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(1.5);

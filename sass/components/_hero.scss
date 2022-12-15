@@ -2,6 +2,8 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-color: #2f303a;
     background-image: var(--grad), 
         url(../images/hero-bg-mob_1x.jpg);
@@ -13,8 +15,7 @@
     background-position: center;
     background-size: cover;
     @include mobile {
-        padding-top: 118px;
-        padding-bottom: 118px;
+
         background-image: var(--grad), 
                 url(../images/hero-bg-tab_1x.jpg);
                 @include retina {
@@ -23,8 +24,6 @@
                     }
     }
     @include tablet {
-        padding-top: 118px;
-        padding-bottom: 118px;
         background-image: var(--grad),
                 url(../images/hero-bg-desk_1x.jpg);
                 @include retina {
