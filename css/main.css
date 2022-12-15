@@ -217,8 +217,6 @@ img {
 .adress-link {
   display: flex;
   align-items: center;
-  font-weight: 500;
-  line-height: 1.1428;
   letter-spacing: 0.02em;
   text-decoration: none;
   list-style: none;
@@ -227,6 +225,18 @@ img {
 }
 .adress-link:hover, .adress-link:focus {
   color: var(--brand-color);
+}
+
+.adress-link__text {
+  font-weight: 500;
+  line-height: 1.1428;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .adress-link__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .email,
