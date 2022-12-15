@@ -393,6 +393,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+  overflow: auto;
 }
 @media screen and (max-width: 480px) {
   .modal {
@@ -406,7 +407,7 @@ img {
   }
 }
 
-.modal > body {
+.backdrop body {
   overflow: hidden;
 }
 
